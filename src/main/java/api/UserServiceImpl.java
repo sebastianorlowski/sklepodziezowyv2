@@ -5,7 +5,7 @@ import work.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService {
 
     List<User> users;
 

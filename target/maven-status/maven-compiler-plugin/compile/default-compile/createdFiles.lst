@@ -1,5 +1,7 @@
 work\Product.class
+api\ProductService.class
 work\Boots.class
+api\ProductServiceImpl.class
 work\User.class
 api\UserService.class
 api\UserServiceImpl.class
