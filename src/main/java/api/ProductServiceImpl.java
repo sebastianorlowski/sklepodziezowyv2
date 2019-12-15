@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService {
 
     public Product getProductByProductName(String productName) {
         for (Product product : products) {
-            if (product.getProductName().equals(products)) {
+            if (product.getProductName().equals(productName)) {
                 return product;
             }
         }
@@ -53,7 +53,7 @@ public class ProductServiceImpl implements ProductService {
 
     }
 
-    public boolean isProductExist(Long productId) {
+    public boolean isProductExist(int productId) {
         for (Product product : products) {
             if (product.getId() == (productId)) {
                 return true;

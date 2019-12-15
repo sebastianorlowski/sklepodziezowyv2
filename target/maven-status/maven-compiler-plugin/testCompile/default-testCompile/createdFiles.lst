@@ -1,2 +1,2 @@
-service\ProductServiceTest.class
-service\UserServiceTest.class
+Service\ProductServiceTest.class
+Service\UserServiceTest.class
