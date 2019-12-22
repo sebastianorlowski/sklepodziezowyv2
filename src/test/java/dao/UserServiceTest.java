@@ -1,10 +1,9 @@
-package Service;
+package dao;
 
 
 import org.junit.Assert;
 import org.junit.Test;
 import work.User;
-import api.UserServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;

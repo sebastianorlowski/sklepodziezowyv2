@@ -1,9 +1,10 @@
+dao\UserServiceImpl.class
 work\Product.class
 api\ProductService.class
 work\Boots.class
-api\ProductServiceImpl.class
 work\User.class
 api\UserService.class
-api\UserServiceImpl.class
+dao\ProductServiceImpl.class
 work\main.class
+api\ProductDao.class
 work\Cloth.class

@@ -3,6 +3,7 @@ package work;
 public class Boots extends Product {
     private int size;
     private boolean isNaturalSkin;
+    public final static String PRODUCT_SEPARATOR = "#";
 
     public Boots(int id, String productName, double price, double weight, String color, int productCount, int size, boolean isNaturalSkin) {
         super(id, productName, price, weight, color, productCount);
@@ -19,9 +20,9 @@ public class Boots extends Product {
     }
 
     public String toString() {
-        return super.toString() + "Boots{" +
-                "size='" + size + '\'' +
-                ", isNaturalSkin=" + isNaturalSkin +
-                '}';
+        return super.toString() + PRODUCT_SEPARATOR +
+                PRODUCT_SEPARATOR + size + '\'' +
+                PRODUCT_SEPARATOR + isNaturalSkin +
+                PRODUCT_SEPARATOR;
     }
 }

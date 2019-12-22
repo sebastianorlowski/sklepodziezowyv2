@@ -1,5 +1,6 @@
-package api;
+package dao;
 
+import api.UserService;
 import work.User;
 
 import java.util.ArrayList;

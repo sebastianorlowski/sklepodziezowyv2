@@ -1,5 +1,6 @@
-package api;
+package dao;
 
+import api.ProductService;
 import work.Product;
 import java.util.*;
 
