@@ -39,7 +39,7 @@ public class ProductParser {
         return new Cloth(id, productName, price, weight, color, productCount, size, material);
     }
 
-        public static Boots convertToBoots(String productStr) {
+    private static Boots convertToBoots(String productStr) {
             String[] productInformations = productStr.split((Product.PRODUCT_SEPARATOR));
 
             int id = Integer.parseInt(productInformations[0]);
