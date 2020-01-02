@@ -1,6 +1,6 @@
 package dao;
 
-import Utils.FileUtils;
+import utils.FileUtils;
 import api.ProductDao;
 import work.Product;
 import work.ProductParser;
