@@ -1,15 +1,17 @@
 package api;
 
 import work.Product;
+
+import java.io.IOException;
 import java.util.*;
 
 public interface ProductService {
 
-    List<Product> getAllProducts();
-    Integer getCountProducts();
-    Product getProductByProductName (String productName);
-    boolean isProductOnWarehouse(String productName);
-    boolean isProductExist(String productName);
-    boolean isProductExist(int productId);
+    List<Product> getAllProducts() throws IOException;
+    Integer getCountProducts() throws IOException;
+    Product getProductByProductName (String productName) throws IOException;
+    boolean isProductOnWarehouse(String productName) throws IOException;
+    boolean isProductExist(String productName) throws IOException;
+    boolean isProductExist(int productId) throws IOException;
 
 }

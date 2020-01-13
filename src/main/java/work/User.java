@@ -4,6 +4,7 @@ public class User {
     private Long id;
     private String login;
     private String password;
+    public final static String USER_SEPARATOR = "#";
 
     public User(Long id, String login, String password) {
         this.id = id;
@@ -23,6 +24,6 @@ public class User {
     }
 
     public String toString() {
-        return "User " + "id = " + id + " login = " + login + " password = " + password + "}";
+        return id + USER_SEPARATOR + login + USER_SEPARATOR  + password;
     }
 }

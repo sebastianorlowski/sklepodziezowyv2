@@ -1,4 +1,9 @@
-package work;
+package parser;
+
+import work.Boots;
+import work.Cloth;
+import work.Product;
+
 public class ProductParser {
     public static Product stringToProduct(String productStr, String productType) {
         if(productType.equals("PRODUCT")) {

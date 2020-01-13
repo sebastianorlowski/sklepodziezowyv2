@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c7de03a-abae-4628-8d18-1f929d466926" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/UserParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/UserLoginAlreadyExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/UserLoginAlreadyExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validator/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/UserValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/ProductParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/ProductParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/work/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/ProductServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/UserServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,20 +111,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577968770062" />
-    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577988242897">
+    <state x="129" y="0" width="1031" height="713" key="dock-window-1" timestamp="1578677988407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1577988242897" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dao/UserServiceImpl.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="129" y="0" width="1031" height="713" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1578677988407" />
+    <state x="350" y="100" width="1031" height="713" key="dock-window-2" timestamp="1578677988407">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="350" y="100" width="1031" height="713" key="dock-window-2/0.0.1366.728@0.0.1366.728" timestamp="1578677988407" />
+    <state x="131" y="0" key="new project wizard" timestamp="1578686653121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="131" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1578686653121" />
+    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1578686484705">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1578686484705" />
   </component>
 </project>
