@@ -10,11 +10,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductDaoImpl implements ProductDao {
-    private String fileName;
-    private String productType;
+    private static final String fileName = "products.data";
+    private static ProductDaoImpl instance = null;
 
-    /*private static ProductDaoImpl instance = null;
     private ProductDaoImpl() {
+        try {
+            FileUtils.createNewFile(fileName);
+        }
+        catch(IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -22,28 +27,18 @@ public class ProductDaoImpl implements ProductDao {
         if(instance == null) {
             instance = new ProductDaoImpl();
         }
-        return instance;
-    }
+        return instance; }
 
-     */
 
-    public ProductDaoImpl(String fileName, String productType) {
-        try {
-            this.fileName = fileName;
-            this.productType = productType;
-            FileUtils.createNewFile(fileName);
-        }
-        catch(IOException e) {
-            e.printStackTrace();
-        }
-    }
+
+
 
     public List<Product> getAllProducts() throws IOException {
         List<Product> products = new ArrayList<Product>();
         BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
         String readLine = bufferedReader.readLine();
         while(readLine != null) {
-            Product product = ProductParser.stringToProduct(readLine, productType);
+            Product product = ProductParser.stringToProduct(readLine);
             if(product != null) {
                 products.add(product);
             }
@@ -69,7 +64,7 @@ public class ProductDaoImpl implements ProductDao {
         printWriter.close();
     }
 
-    public Product getProductById(int productId) throws IOException {
+    public Product getProductById(Long productId) throws IOException {
         List<Product> products = getAllProducts();
         for(Product product : products) {
             if(productId == product.getId()) {
@@ -90,7 +85,7 @@ public class ProductDaoImpl implements ProductDao {
         return null;
     }
 
-    public void removeProductById(int productId) throws IOException {
+    public void removeProductById(Long productId) throws IOException {
         List<Product> products = getAllProducts();
 
         for(Product product : products) {

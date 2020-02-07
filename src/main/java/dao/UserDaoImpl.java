@@ -21,8 +21,9 @@ public class UserDaoImpl implements UserDao {
         }
         catch (IOException e) {
             System.out.println("Error with file path!");
+            System.exit(-1);
         }
-        System.exit(-1);
+
     }
 
     public static UserDaoImpl getInstance() {
@@ -56,32 +57,9 @@ public class UserDaoImpl implements UserDao {
         String readLine = bufferedReader.readLine();
         while (readLine != null) {
             User user = UserParser.stringToUser(readLine);
-            if(user != null) {
-                users.add(user);
-            }
-        }
+                            users.add(user);
+                    }
         return users;
-    }
-
-    public User getUserByLogin(String login) throws IOException {
-        List<User> users = getAllUsers();
-        for (User user : users) {
-            if (login.equals(user.getLogin())) {
-                return user;
-            }
-        }
-        return null;
-
-    }
-
-    public User getUserById(Long userId) throws IOException {
-        List<User> users = getAllUsers();
-        for (User user : users) {
-            if (userId.equals(user.getId())) {
-                return user;
-            }
-        }
-        return null;
     }
 
 

@@ -1,2 +1,2 @@
-Service\ProductServiceTest.class
-Service\UserServiceTest.class
+parser\SkinParserTest.class
+parser\ColorParserTest.class

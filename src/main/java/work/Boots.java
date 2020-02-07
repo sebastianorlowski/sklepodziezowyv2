@@ -1,28 +1,29 @@
 package work;
+import enums.*;
 
 public class Boots extends Product {
     private int size;
-    private boolean isNaturalSkin;
-    public final static String PRODUCT_SEPARATOR = "#";
+    private SkinType skinType;
 
-    public Boots(int id, String productName, double price, double weight, String color, int productCount, int size, boolean isNaturalSkin) {
+    public Boots(Long id, String productName, double price, double weight, Color color, int productCount, int size,
+                 SkinType skinType) {
         super(id, productName, price, weight, color, productCount);
         this.size = size;
-        this.isNaturalSkin = isNaturalSkin;
+        this.skinType = skinType;
+
     }
 
     public int getSize() {
         return size;
     }
 
-    public boolean isNaturalSkin() {
-        return isNaturalSkin;
+    public SkinType getSkinType() {
+        return skinType;
     }
 
     public String toString() {
-        return super.toString() + PRODUCT_SEPARATOR +
-                PRODUCT_SEPARATOR + size + '\'' +
-                PRODUCT_SEPARATOR + isNaturalSkin +
-                PRODUCT_SEPARATOR;
+        return super.toString() + ProductSeparators.BOOTS_ID + ProductSeparators.PRODUCT_SEPARATOR.toString() +
+                getBasicProductString() + size +
+                ProductSeparators.PRODUCT_SEPARATOR.toString() + skinType;
     }
 }

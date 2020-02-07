@@ -1,8 +1,15 @@
-package work;
-
 import dao.UserRegisterLoginFacadeImpl;
 import api.*;
+import parser.ColorParser;
+import parser.MaterialParser;
+import parser.SkinParser;
 import service.*;
+import work.Boots;
+import work.Cloth;
+import work.Product;
+import work.User;
+import enums.*;
+
 
 import java.util.Scanner;
 
@@ -31,12 +38,12 @@ public class Main {
     public static Product createBootsProduct() {
         String productName;
         double price, weight;
-        String color;
+        Color color;
         int productCount, size;
-        boolean isNaturalSkin;
+        SkinType skinType;
 
         System.out.println("Enter the name of boots");
-        productName = scanner.nextLine();
+        productName = scanner.next();
 
         System.out.println("Enter the price of boots");
         price = scanner.nextDouble();
@@ -44,8 +51,8 @@ public class Main {
         System.out.println("Enter the weight of boots");
         weight = scanner.nextDouble();
 
-        System.out.println("Enter the color of boots");
-        color = scanner.nextLine();
+        System.out.println("Enter the color of boots (Available BLACK/WHITE/GREEN/BLUE/YELLOW/RED)");
+        color = ColorParser.parseColor(scanner.next());
 
         System.out.println("Enter the pairs of boots");
         productCount = scanner.nextInt();
@@ -53,22 +60,22 @@ public class Main {
         System.out.println("Enter the size of boots");
         size = scanner.nextInt();
 
-        System.out.println("Are they made of natural skin?");
-        isNaturalSkin = scanner.nextBoolean();
+        System.out.println("Enter type of skin (Available NATURAL/ARTIFICAL)");
+        skinType = SkinParser.parseSkin(scanner.next());
 
-        return new Boots(1L, productName, price, weight, color, productCount, size, isNaturalSkin);
+        return new Boots(1L, productName, price, weight, color, productCount, size, skinType);
     }
 
     public static Product createClothProduct() {
         String productName;
         double price, weight;
-        String color;
+        Color color;
         int productCount;
         String size;
-        String material;
+        Material material;
 
         System.out.println("Enter the name of cloth");
-        productName = scanner.nextLine();
+        productName = scanner.next();
 
         System.out.println("Enter the price of cloth");
         price = scanner.nextDouble();
@@ -76,17 +83,17 @@ public class Main {
         System.out.println("Enter the weight of cloth");
         weight = scanner.nextDouble();
 
-        System.out.println("Enter the colors of cloth");
-        color = scanner.nextLine();
+        System.out.println("Enter the colors of cloth (Available BLACK/WHITE/GREEN/BLUE/YELLOW/RED)");
+        color = ColorParser.parseColor(scanner.next());
 
         System.out.println("Enter the pairs of cloth");
         productCount = scanner.nextInt();
 
         System.out.println("Enter the size of cloth");
-        size = scanner.nextLine();
+        size = scanner.next();
 
-        System.out.println("Enter the material of cloth");
-        material = scanner.nextLine();
+        System.out.println("Enter the material of cloth (Available LEATHER/FUR/COTTON/WOOL/POLYESTERS");
+        material = MaterialParser.parseMaterial(scanner.next());
 
         return new Cloth(1L, productName, price, weight, color, productCount, size, material);
     }
@@ -94,23 +101,23 @@ public class Main {
     public static Product createOtherProduct() {
         String productName;
         double price, weight;
-        String color;
+        Color color;
         int productCount;
 
 
-        System.out.println("Enter the name of cloth");
-        productName = scanner.nextLine();
+        System.out.println("Enter the name of product");
+        productName = scanner.next();
 
-        System.out.println("Enter the price of cloth");
+        System.out.println("Enter the price of product");
         price = scanner.nextDouble();
 
-        System.out.println("Enter the weight of cloth");
+        System.out.println("Enter the weight of product");
         weight = scanner.nextDouble();
 
-        System.out.println("Enter the colors of cloth");
-        color = scanner.nextLine();
+        System.out.println("Enter the colors of product (Available BLACK/WHITE/GREEN/BLUE/YELLOW/RED)");
+        color = ColorParser.parseColor(scanner.next());
 
-        System.out.println("Enter the pairs of cloth");
+        System.out.println("Enter the pairs of product");
         productCount = scanner.nextInt();
 
         return new Product(1L, productName, price, weight, color, productCount);
@@ -133,23 +140,24 @@ public class Main {
 
                 case 1:
                     System.out.println("Enter login");
-                    String loginLog = scanner.nextLine();
+                    String loginLog = scanner.next();
                     System.out.println("Enter password");
-                    String passwordLog = scanner.nextLine();
+                    String passwordLog = scanner.next();
                     if (userRegisterLoginFacade.loginUser(loginLog, passwordLog)) {
                         logOn = true;
                         System.out.println("You have logged in!");
                     } else {
                         System.out.println("Wrong login or password! Try Again!");
+                        logOn = false;
                     }
                     break;
 
                 case 2:
                     System.out.println("Create new login");
-                    String loginReg = scanner.nextLine();
+                    String loginReg = scanner.next();
                     System.out.println("Create password");
-                    String passwordReg = scanner.nextLine();
-                    User user = new User(1L, loginReg, passwordReg);
+                    String passwordReg = scanner.next();
+                    User user = new User(1L,loginReg, passwordReg);
                     if (userRegisterLoginFacade.registerUser(user)) {
                         System.out.println("You have registered! Congratulations!");
                     } else {
@@ -187,6 +195,10 @@ public class Main {
                         } else {
                             System.out.println("Product could not be created!");
                         }
+                        break;
+                    case 2:
+                        logOn = false;
+                        break;
                 }
             }
 

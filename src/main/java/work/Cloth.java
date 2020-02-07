@@ -1,11 +1,15 @@
 package work;
 
+import enums.Material;
+import enums.ProductSeparators;
+import enums.Color;
+
 public class Cloth extends Product {
     private String size;
-    private String material;
-    public final static String PRODUCT_SEPARATOR = "#";
+    private Material material;
 
-    public Cloth(int id, String productName, double price, double weight, String color, int productCount, String size, String material) {
+    public Cloth(Long id, String productName, double price, double weight, Color color, int productCount,
+                 String size, Material material) {
         super(id, productName, price, weight, color, productCount);
         this.size = size;
         this.material = material;
@@ -15,14 +19,11 @@ public class Cloth extends Product {
         return size;
     }
 
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
     public String toString() {
-        return super.toString() + PRODUCT_SEPARATOR +
-                PRODUCT_SEPARATOR + size + '\'' +
-                PRODUCT_SEPARATOR + material + '\'' +
-                '}';
+        return super.toString() + ProductSeparators.CLOTH_ID + ProductSeparators.PRODUCT_SEPARATOR.toString() + getBasicProductString() + ProductSeparators.PRODUCT_SEPARATOR.toString() + size + ProductSeparators.PRODUCT_SEPARATOR.toString() + material;
     }
 }

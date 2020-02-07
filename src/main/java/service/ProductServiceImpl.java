@@ -1,20 +1,22 @@
 package service;
 
 import api.ProductDao;
+import api.ProductService;
 import dao.ProductDaoImpl;
+import validator.ProductValidator;
 import work.Product;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.List;
 
 
-public class ProductServiceImpl implements api.ProductService {
+public class ProductServiceImpl implements ProductService {
 
-    private ProductDao productDao = new ProductDaoImpl("products.data", "PRODUCT");
+    private ProductDao productDao = ProductDaoImpl.getInstance();
     private static ProductServiceImpl instance = null;
-    private ProductServiceImpl() {
+    ProductValidator productValidator = ProductValidator.getInstance();
 
-    }
+
 
     public static ProductServiceImpl getInstance() {
         if(instance == null) {
@@ -64,7 +66,7 @@ public class ProductServiceImpl implements api.ProductService {
 
     }
 
-    public boolean isProductExist(int productId) throws IOException {
+    public boolean isProductExist(Long productId) throws IOException {
         for (Product product : getAllProducts()) {
             if (product.getId() == (productId)) {
                 return true;
@@ -74,4 +76,20 @@ public class ProductServiceImpl implements api.ProductService {
 
     }
 
-}
+    public boolean saveProduct(Product product) {
+        try {
+            if (productValidator.isValidate(product)) {
+                productDao.saveProduct(product);
+                return true;
+            }
+        }
+            catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            return false;
+        }
+
+
+    }
+
+

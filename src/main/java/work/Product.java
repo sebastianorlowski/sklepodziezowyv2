@@ -1,17 +1,18 @@
 package work;
 
+import enums.ProductSeparators;
+import enums.*;
+
 public class Product {
 
-    public final static String PRODUCT_SEPARATOR = "#";
-
-    private int id;
+    private Long id;
     private String productName;
     private double price;
     private double weight;
-    private String color;
+    private Color color;
     private int productCount;
 
-    public Product(int id, String productName, double price, double weight, String color, int productCount) {
+    public Product(Long id, String productName, double price, double weight, Color color, int productCount) {
         this.id = id;
         this.productName = productName;
         this.price = price;
@@ -29,7 +30,7 @@ public class Product {
         this.productCount = productCount;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -45,7 +46,7 @@ public class Product {
         return weight;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
@@ -53,7 +54,12 @@ public class Product {
         return productCount;
     }
 
+
+    public String getBasicProductString() {
+        return id + ProductSeparators.PRODUCT_SEPARATOR.toString() + productName + ProductSeparators.PRODUCT_SEPARATOR.toString() + price + ProductSeparators.PRODUCT_SEPARATOR.toString() + weight + ProductSeparators.PRODUCT_SEPARATOR.toString() + color + ProductSeparators.PRODUCT_SEPARATOR.toString() + productCount;
+    }
+
     public String toString() {
-        return id + PRODUCT_SEPARATOR + productName + PRODUCT_SEPARATOR + price + PRODUCT_SEPARATOR + weight + PRODUCT_SEPARATOR + color + PRODUCT_SEPARATOR + productCount;
+        return ProductSeparators.PRODUCT_ID + ProductSeparators.PRODUCT_SEPARATOR.toString() + getBasicProductString();
     }
 }

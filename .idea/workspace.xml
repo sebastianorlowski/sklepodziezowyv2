@@ -2,35 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c7de03a-abae-4628-8d18-1f929d466926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/UserParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/sklepodziezowy.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/api/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/api/UserFacade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dao/ProductDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dao/UserDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dao/UserRegisterLoginFacadeImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/enums/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/enums/Material.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/enums/ProductSeparators.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/enums/SkinType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exception/ProductCountNegativeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exception/ProductNameEmptyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exception/ProductPriceNoPositiveException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exception/ProductWeightNoPositiveException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exception/UserLoginAlreadyExistException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exception/UserShortLengthLoginException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exception/UserShortLengthPasswordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/parser/ColorParser$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/parser/ColorParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/parser/MaterialParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/parser/ProductParser$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/parser/ProductParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/parser/SkinParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/parser/UserParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/UserRegisterLogin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utils/FileUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/validator/ProductValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/validator/UserValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-parser.ColorParserTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-parser.MaterialParserTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-parser.SkinParserTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/parser.ColorParserTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/parser.MaterialParserTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/parser.SkinParserTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/parser/ColorParserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/parser/MaterialParserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/parser/SkinParserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users.data" beforeDir="false" afterPath="$PROJECT_DIR$/Users.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/UserFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/UserFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ProductDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exception/UserLoginAlreadyExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/UserLoginAlreadyExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserRegisterLoginFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserRegisterLoginFacadeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/ProductSeparators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/ProductSeparators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/SkinType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/SkinType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/ProductCountNegativeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/ProductCountNegativeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/ProductNameEmptyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/ProductNameEmptyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/ProductPriceNoPositiveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/ProductPriceNoPositiveException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/ProductWeightNoPositiveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/ProductWeightNoPositiveException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/ColorParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/ColorParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/MaterialParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/MaterialParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/ProductParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/ProductParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/SkinParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/SkinParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserRegisterLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserRegisterLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validator/ProductValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/ProductValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/validator/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/work/ProductParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/ProductParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/work/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/work/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/ProductServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/UserServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/Boots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/work/Boots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/Cloth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/work/Cloth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/work/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parser/ColorParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parser/ColorParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parser/MaterialParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parser/MaterialParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parser/SkinParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parser/SkinParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/work/Boots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/work/Boots.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/work/Cloth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/work/Cloth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/work/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/work/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/work/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/work/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/work/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sklepodziezowy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/sklepodziezowy-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ProductServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -46,23 +121,51 @@
     </option>
   </component>
   <component name="ProjectId" id="1UlBsM1JX7IMJMaobYh2wqdnneF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Steve Williams\IdeaProjects\sklepodziezowy\src\main\java" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="sklepodziezowy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -102,30 +205,112 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="550" y="26" key="#Project_Structure" timestamp="1580156167446">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="550" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1580156167446" />
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579801356706">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579801356706" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1579373248166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579373248166" />
+    <state x="484" y="234" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579801273918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="234" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1579801273918" />
+    <state x="364" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579719194608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="364" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1579719194608" />
+    <state x="409" y="33" key="#main" timestamp="1579756796408">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="409" y="33" key="#main/0.0.1366.728@0.0.1366.728" timestamp="1579756796408" />
     <state x="777" y="228" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577988136536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="777" y="228" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1577988136536" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1577968770062">
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1580677749334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577968770062" />
-    <state x="129" y="0" width="1031" height="713" key="dock-window-1" timestamp="1578677988407">
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580677749334" />
+    <state width="1323" height="153" key="GridCell.Tab.0.bottom" timestamp="1580330383555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="129" y="0" width="1031" height="713" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1578677988407" />
+    <state width="1323" height="153" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580330383555" />
+    <state width="1323" height="153" key="GridCell.Tab.0.center" timestamp="1580330383547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="153" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580330383547" />
+    <state width="1323" height="153" key="GridCell.Tab.0.left" timestamp="1580330383547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="153" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580330383547" />
+    <state width="1323" height="153" key="GridCell.Tab.0.right" timestamp="1580330383554">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="153" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580330383554" />
+    <state width="1323" height="148" key="GridCell.Tab.1.bottom" timestamp="1579802061212">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="148" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579802061212" />
+    <state width="1323" height="148" key="GridCell.Tab.1.center" timestamp="1579802061197">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="148" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579802061197" />
+    <state width="1323" height="148" key="GridCell.Tab.1.left" timestamp="1579802061197">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="148" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579802061197" />
+    <state width="1323" height="148" key="GridCell.Tab.1.right" timestamp="1579802061197">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="148" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579802061197" />
+    <state x="372" y="0" key="SettingsEditor" timestamp="1580188925835">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="372" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580188925835" />
+    <state x="679" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579719740640">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="679" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1579719740640" />
+    <state x="454" y="85" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1580069462736">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="85" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1580069462736" />
+    <state x="717" y="4" width="619" height="747" key="dock-window-1" timestamp="1579955360038">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="717" y="4" width="619" height="747" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1579955360038" />
     <state x="350" y="100" width="1031" height="713" key="dock-window-2" timestamp="1578677988407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="350" y="100" width="1031" height="713" key="dock-window-2/0.0.1366.728@0.0.1366.728" timestamp="1578677988407" />
-    <state x="131" y="0" key="new project wizard" timestamp="1578686653121">
+    <state x="131" y="0" key="new project wizard" timestamp="1580497565032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="131" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1578686653121" />
-    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1578686484705">
+    <state x="131" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1580497565032" />
+    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580332800956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1578686484705" />
+    <state x="688" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580332800956" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/parser/MaterialParserTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
